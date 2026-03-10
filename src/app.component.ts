@@ -1,9 +1,10 @@
 import { Component } from '@angular/core'
+import { MainComponent } from './main.component'
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  template: ` <main class="main">Empty</main> `,
+  imports: [MainComponent],
+  template: `<app-main></app-main>`,
   styles: `
     body {
       margin: 0;
