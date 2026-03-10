@@ -3,14 +3,13 @@ import { Component, Input } from '@angular/core'
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [],
   template: `
     <div class="blog">
       <h2 class="blog-title">{{ title }}</h2>
       <p class="blog-detail">{{ detail }}</p>
     </div>
   `,
-  styles: `
+  styles: [`
     .blog {
       padding: 1rem;
     }
@@ -26,7 +25,7 @@ import { Component, Input } from '@angular/core'
       line-height: 1.6;
       color: #555;
     }
-  `,
+  `],
 })
 export class BlogComponent {
   @Input() title: string = ''

@@ -10,7 +10,7 @@ import { BlogComponent } from '../blog/blog.component'
       <app-blog [title]="blog.title" [detail]="blog.detail"></app-blog>
     </main>
   `,
-  styles: `
+  styles: [`
     .main {
       flex: 1;
       padding: 1rem;
@@ -18,7 +18,7 @@ import { BlogComponent } from '../blog/blog.component'
       flex-direction: row;
       align-items: flex-start;
     }
-  `,
+  `],
 })
 export class MainComponent {
   blog = { title: 'Morning', detail: 'Morning My Friends' }

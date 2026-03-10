@@ -3,13 +3,12 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
   template: `
     <header class="header">
       <span>Hello Blog</span>
     </header>
   `,
-  styles: `
+  styles: [`
     .header {
       background-color: #4CAF50;
       color: white;
@@ -22,6 +21,6 @@ import { Component } from '@angular/core'
       align-items: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-  `,
+  `],
 })
 export class HeaderComponent {}

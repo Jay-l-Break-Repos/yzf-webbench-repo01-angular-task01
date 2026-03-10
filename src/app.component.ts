@@ -10,13 +10,13 @@ import { MainComponent } from './components/main/main.component'
     <app-header></app-header>
     <app-main></app-main>
   `,
-  styles: `
+  styles: [`
     :host {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
-  `,
+  `],
 })
 export class AppComponent {
   title = 'angular'
