@@ -18,6 +18,8 @@ import { Component, Input } from '@angular/core'
       margin-bottom: 1rem;
     }
     .blog-title {
+      width: fit-content;
+      font-size: 24px;
       margin: 0 0 0.5rem 0;
     }
     .blog-detail {
