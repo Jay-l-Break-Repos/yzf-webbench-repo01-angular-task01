@@ -55,7 +55,8 @@ module.exports = defineConfig({
   webServer: {
     command: `cd ${PROJECT_DIR} && npx ng serve --port ${PORT}`,
     url: `http://localhost:${PORT}`,
-    reuseExistingServer: false,
+    reuseExistingServer: !process.env.CI,
+    timeout: 120000,
   },
 
   /* Configure projects for major browsers */
