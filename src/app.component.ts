@@ -1,21 +1,10 @@
 import { Component } from '@angular/core'
-import { HeaderComponent } from './components/header/header.component'
-import { MainComponent } from './components/main/main.component'
+import { RouterOutlet } from '@angular/router'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, MainComponent],
-  template: `
-    <app-header />
-    <app-main />
-  `,
-  styles: `
-    :host {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-  `,
+  imports: [RouterOutlet],
+  template: `<router-outlet />`
 })
 export class AppComponent {}
