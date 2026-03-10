@@ -1,12 +1,13 @@
 import { Component } from '@angular/core'
+import { BlogComponent } from '../blog/blog.component'
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [],
+  imports: [BlogComponent],
   template: `
     <main class="main">
-      <p>Main Component</p>
+      <app-blog [title]="blogTitle" [detail]="blogDetail"></app-blog>
     </main>
   `,
   styles: `
@@ -17,4 +18,7 @@ import { Component } from '@angular/core'
     }
   `,
 })
-export class MainComponent {}
+export class MainComponent {
+  blogTitle = 'Morning';
+  blogDetail = 'Morning My Friends';
+}

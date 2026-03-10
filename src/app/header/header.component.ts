@@ -6,7 +6,7 @@ import { Component } from '@angular/core'
   imports: [],
   template: `
     <header class="header">
-      <h1>Blog</h1>
+      <h1>Hello Blog</h1>
     </header>
   `,
   styles: `
