@@ -11,8 +11,8 @@ RUN node -e "const fs=require('fs');const p=require('./package.json');if(p.devDe
 COPY . .
 
 ENV EVAL_PROJECT_ROOT=src
-ENV EVAL_PROJECT_PORT=3211
+ENV EVAL_PROJECT_PORT=5173
 
-EXPOSE 3211
+EXPOSE 5173
 
-CMD ["bash", "-lc", "cd ${EVAL_PROJECT_ROOT:-src} && npx ng serve --port ${EVAL_PROJECT_PORT:-3211} --host 0.0.0.0"]
+CMD ["bash", "-lc", "cd ${EVAL_PROJECT_ROOT:-src} && npx ng serve --port ${EVAL_PROJECT_PORT:-5173} --host 0.0.0.0"]
